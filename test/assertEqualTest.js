@@ -1,5 +1,15 @@
+//const assert = require('chai').assert;
 const assertEqual = require('../assertEqual');
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+describe("#assertEqual", () => {
+  it("should log Assertion Failed", () => {
+  });
+  it("", () => {
+    assertEqual("Lighthouse Labs", "Bootcamp");
+  });
+  it("should log Assertion Passed", () => {
+  });
+  it("", () => {
+    assertEqual(1, 1);
+  });
+});
