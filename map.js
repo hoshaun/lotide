@@ -39,3 +39,5 @@ console.log(results1);
 assertArraysEqual(map([], x => x), []);
 assertArraysEqual(map([1], x => x), [1]);
 assertArraysEqual(map([1, 2, 3], x => x), [1, 2, 3]);
+
+module.exports = map;
