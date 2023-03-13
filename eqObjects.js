@@ -1,24 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-
-  return true;
-};
+//const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
   if (typeof(object1) !== typeof(object2)) {
@@ -48,6 +29,7 @@ const eqObjects = function(object1, object2) {
   }
 };
 
+/*
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject , anotherShirtObject), true); // => true
@@ -68,5 +50,6 @@ console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // =
 console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
 
 console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { y: 0, z: 1 }, b: 2 })); // => true
+*/
 
 module.exports = eqObjects;

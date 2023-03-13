@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hoshaun/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lighthouse Labs Lotide Project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/hoshaun/lotide.git"
   },
-  "author": "",
+  "author": "Shaun Ho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hoshaun/lotide/issues"
